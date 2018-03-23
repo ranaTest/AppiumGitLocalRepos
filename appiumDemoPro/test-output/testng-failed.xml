@@ -5,9 +5,13 @@
     <classes>
       <class name="com.appiumDemoPro.Generic.BaseLibrary">
         <methods>
+          <include name="cleanConfig"/>
+          <include name="closeReport"/>
+          <include name="logOutConfig"/>
+          <include name="logginCofig"/>
           <include name="launchApp"/>
           <include name="sample"/>
-          <include name="closeApp"/>
+          <include name="reportGrenerator"/>
         </methods>
       </class> <!-- com.appiumDemoPro.Generic.BaseLibrary -->
     </classes>

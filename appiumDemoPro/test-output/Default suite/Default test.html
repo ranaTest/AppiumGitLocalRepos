@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 16 14:27:01 IST 2018</td>
+<td>Started on:</td><td>Mon Mar 19 11:45:29 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1637 ms)</td>
+<tr><td>Total time:</td><td>121 seconds (121063 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,7 +76,7 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.appiumDemoPro.Generic.BaseLibrary.launchApp()'><b>launchApp</b><br>Test class: com.appiumDemoPro.Generic.BaseLibrary</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.1:4723 [/0.0.0.1] failed: Invalid argument (connect failed)
+<td><div><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.ConnectTimeoutException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: connect timed out
 Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
 System info: host: &apos;N/A&apos;, ip: &apos;N/A&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-116-generic&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: driver.version: AndroidDriver
@@ -92,7 +92,7 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:132)
 	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:92)
-	at com.appiumDemoPro.Generic.BaseLibrary.launchApp(BaseLibrary.java:28)
+	at com.appiumDemoPro.Generic.BaseLibrary.launchApp(BaseLibrary.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,8 +119,8 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.1:4723 [/0.0.0.1] failed: Invalid argument (connect failed)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
@@ -137,18 +137,18 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.1:472
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
 	... 38 more
-Caused by: java.net.ConnectException: Invalid argument (connect failed)
+Caused by: java.net.SocketTimeoutException: connect timed out
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 53 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace780934299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace780934299'><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.1:4723 [/0.0.0.1] failed: Invalid argument (connect failed)
+</pre></div><a href='#' onClick='toggleBox("stack-trace634297796", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace634297796'><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.ConnectTimeoutException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: connect timed out
 Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
 System info: host: &apos;N/A&apos;, ip: &apos;N/A&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-116-generic&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: driver.version: AndroidDriver
@@ -164,7 +164,7 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:132)
 	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:92)
-	at com.appiumDemoPro.Generic.BaseLibrary.launchApp(BaseLibrary.java:28)
+	at com.appiumDemoPro.Generic.BaseLibrary.launchApp(BaseLibrary.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -191,8 +191,8 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.1:4723 [/0.0.0.1] failed: Invalid argument (connect failed)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
@@ -209,10 +209,10 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.1:472
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
 	... 38 more
-Caused by: java.net.ConnectException: Invalid argument (connect failed)
+Caused by: java.net.SocketTimeoutException: connect timed out
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
@@ -220,8 +220,8 @@ Caused by: java.net.ConnectException: Invalid argument (connect failed)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 53 more
 </pre></div></td>
-<td>1</td>
-<td>com.appiumDemoPro.Generic.BaseLibrary@543c6f6d</td></tr>
+<td>120</td>
+<td>com.appiumDemoPro.Generic.BaseLibrary@43738a82</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -231,10 +231,20 @@ Caused by: java.net.ConnectException: Invalid argument (connect failed)
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.appiumDemoPro.Generic.BaseLibrary.closeApp()'><b>closeApp</b><br>Test class: com.appiumDemoPro.Generic.BaseLibrary</td>
+<td title='com.appiumDemoPro.Generic.BaseLibrary.logginCofig()'><b>logginCofig</b><br>Test class: com.appiumDemoPro.Generic.BaseLibrary</td>
 <td></td>
 <td>0</td>
-<td>com.appiumDemoPro.Generic.BaseLibrary@543c6f6d</td></tr>
+<td>com.appiumDemoPro.Generic.BaseLibrary@43738a82</td></tr>
+<tr>
+<td title='com.appiumDemoPro.Generic.BaseLibrary.logOutConfig()'><b>logOutConfig</b><br>Test class: com.appiumDemoPro.Generic.BaseLibrary</td>
+<td></td>
+<td>0</td>
+<td>com.appiumDemoPro.Generic.BaseLibrary@43738a82</td></tr>
+<tr>
+<td title='com.appiumDemoPro.Generic.BaseLibrary.cleanConfig()'><b>cleanConfig</b><br>Test class: com.appiumDemoPro.Generic.BaseLibrary</td>
+<td></td>
+<td>0</td>
+<td>com.appiumDemoPro.Generic.BaseLibrary@43738a82</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -245,7 +255,7 @@ Caused by: java.net.ConnectException: Invalid argument (connect failed)
 </tr>
 <tr>
 <td title='com.appiumDemoPro.Generic.BaseLibrary.sample()'><b>sample</b><br>Test class: com.appiumDemoPro.Generic.BaseLibrary</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.1:4723 [/0.0.0.1] failed: Invalid argument (connect failed)
+<td><div><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.ConnectTimeoutException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: connect timed out
 Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
 System info: host: &apos;N/A&apos;, ip: &apos;N/A&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-116-generic&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: driver.version: AndroidDriver
@@ -261,7 +271,7 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:132)
 	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:92)
-	at com.appiumDemoPro.Generic.BaseLibrary.launchApp(BaseLibrary.java:28)
+	at com.appiumDemoPro.Generic.BaseLibrary.launchApp(BaseLibrary.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -288,8 +298,8 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.1:4723 [/0.0.0.1] failed: Invalid argument (connect failed)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
@@ -306,18 +316,18 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.1:472
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
 	... 38 more
-Caused by: java.net.ConnectException: Invalid argument (connect failed)
+Caused by: java.net.SocketTimeoutException: connect timed out
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
 	... 53 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace856055143", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace856055143'><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.1:4723 [/0.0.0.1] failed: Invalid argument (connect failed)
+</pre></div><a href='#' onClick='toggleBox("stack-trace475603167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace475603167'><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.ConnectTimeoutException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: connect timed out
 Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
 System info: host: &apos;N/A&apos;, ip: &apos;N/A&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-116-generic&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: driver.version: AndroidDriver
@@ -333,7 +343,7 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:114)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:132)
 	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:92)
-	at com.appiumDemoPro.Generic.BaseLibrary.launchApp(BaseLibrary.java:28)
+	at com.appiumDemoPro.Generic.BaseLibrary.launchApp(BaseLibrary.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -360,8 +370,8 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.1:4723 [/0.0.0.1] failed: Invalid argument (connect failed)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to 0.0.0.0:4723 [/0.0.0.0] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
 	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
@@ -378,10 +388,10 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 0.0.0.1:472
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
 	... 38 more
-Caused by: java.net.ConnectException: Invalid argument (connect failed)
+Caused by: java.net.SocketTimeoutException: connect timed out
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
@@ -390,7 +400,7 @@ Caused by: java.net.ConnectException: Invalid argument (connect failed)
 	... 53 more
 </pre></div></td>
 <td>0</td>
-<td>com.appiumDemoPro.Generic.BaseLibrary@543c6f6d</td></tr>
+<td>com.appiumDemoPro.Generic.BaseLibrary@43738a82</td></tr>
 </table><p>
 </body>
 </html>
